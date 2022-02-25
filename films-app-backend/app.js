@@ -1,25 +1,24 @@
 const express = require("express");
-const cors = require("cors");
 
 const app = express();
 
 app.get("/", (req, res) => {
   res.json([
     {
-      id: "1",
+      id: "111",
       title: "The Matrix",
     },
     {
-      id: "2",
+      id: "222",
       title: "Jhon Wick",
     },
     {
-      id: "332",
-      title: "interstellar",
+      id: "3332",
+      title: "Interstellar",
     },
     {
       id: "4",
-      title: "the shawshank redemption",
+      title: "The shawshank redemption",
     },
   ]);
 });
