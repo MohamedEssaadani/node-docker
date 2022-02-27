@@ -10,10 +10,12 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
         <h1>Movies List</h1>
-        {movies &&
-          movies.map((movie) => <div key={movie.id}>{movie.title}</div>)}
+        <div>
+          {movies &&
+            movies.map((movie) => <div key={movie.id}>{movie.title}</div>)}
+        </div>
       </header>
     </div>
   );
